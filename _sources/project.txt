@@ -1,12 +1,4 @@
 Documentation internals
 #######################
 
-.. raw:: latex
-
-   \setcounter{secnumdepth}{-1}
-
 .. include:: ../../CREDITS.rst
-
-.. raw:: latex
-
-   \setcounter{secnumdepth}{2}
