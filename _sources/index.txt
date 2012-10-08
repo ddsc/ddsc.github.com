@@ -8,6 +8,7 @@ Documentation overview
    :maxdepth: 2
 
    code_organization
+   servers
    project
 
 .. include:: ../../CHANGES.rst
