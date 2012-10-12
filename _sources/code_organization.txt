@@ -20,3 +20,6 @@ For now, here's a list of links.
 
   The project documentation. (When developing, run
   ``./update_documentation.sh`` to copy the documentation to github pages.)
+
+- https://lizard-developer-docs.readthedocs.org contains the most basic
+  documentation for developers.
