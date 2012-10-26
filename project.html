@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="ddsc_project v documentation" href="index.html" />
-    <link rel="prev" title="Code organization and repository structure" href="code_organization.html" /> 
+    <link rel="prev" title="Documentation pointers" href="documentation.html" /> 
   </head>
   <body>
     <div class="related">
@@ -33,7 +33,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="code_organization.html" title="Code organization and repository structure"
+          <a href="documentation.html" title="Documentation pointers"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">ddsc_project v documentation</a> &raquo;</li> 
       </ul>
@@ -46,6 +46,39 @@
             
   <div class="section" id="documentation-internals">
 <h1>Documentation internals<a class="headerlink" href="#documentation-internals" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ddsc-documentation-project">
+<h2>DDSC documentation project<a class="headerlink" href="#ddsc-documentation-project" title="Permalink to this headline">¶</a></h2>
+<p>This technical project documentation is available online at
+<a class="reference external" href="http://ddsc.github.com">http://ddsc.github.com</a></p>
+<div class="section" id="working-on-the-documentation">
+<h3>Working on the documentation<a class="headerlink" href="#working-on-the-documentation" title="Permalink to this headline">¶</a></h3>
+<p>The documentation is made with <a class="reference external" href="http://sphinx.pocoo.org/">sphinx</a>. To get
+everything working, do the regular buildout dance:</p>
+<div class="highlight-python"><pre>$ python bootstrap.py
+$ bin/buildout</pre>
+</div>
+<p>To build the documentation, run:</p>
+<div class="highlight-python"><pre>$ bin/sphinx</pre>
+</div>
+<p>The documentation source files are inside <tt class="docutils literal"><span class="pre">doc/source/</span></tt>. The format is
+&#8220;restructured text&#8221;, see the <a class="reference external" href="http://sphinx.pocoo.org/">sphinx website</a> for
+the syntax.</p>
+</div>
+<div class="section" id="rendered-documentation-on-ddsc-github-com">
+<h3>Rendered documentation on ddsc.github.com<a class="headerlink" href="#rendered-documentation-on-ddsc-github-com" title="Permalink to this headline">¶</a></h3>
+<p>The github repository for this documentation is
+<a class="reference external" href="https://github.com/ddsc/ddsc-project">https://github.com/ddsc/ddsc-project</a>, but there&#8217;s a second repository:
+<a class="reference external" href="https://github.com/ddsc/ddsc.github.com">https://github.com/ddsc/ddsc.github.com</a> ! This specially-named second
+repository tells github to show that repository&#8217;s content as <a class="reference external" href="http://pages.github.com/">github pages</a>. In this way, it is the documentation for the
+ddsc organization on github.</p>
+<p>How to update that documentation there? Normally you&#8217;ll run <tt class="docutils literal"><span class="pre">bin/sphinx</span></tt> and
+look at the pages locally. When you&#8217;re done, just run
+<tt class="docutils literal"><span class="pre">./update_documentation.sh</span></tt> to copy the documentation to
+<tt class="docutils literal"><span class="pre">../ddsc.github.com</span></tt>. The assumption in the script is that
+<tt class="docutils literal"><span class="pre">../ddsc.github.com</span></tt> exists and that it is a checkout of
+<a class="reference external" href="https://github.com/ddsc/ddsc.github.com">https://github.com/ddsc/ddsc.github.com</a> .</p>
+</div>
+</div>
 <div class="section" id="credits">
 <h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -63,14 +96,19 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Documentation internals</a><ul>
+<li><a class="reference internal" href="#ddsc-documentation-project">DDSC documentation project</a><ul>
+<li><a class="reference internal" href="#working-on-the-documentation">Working on the documentation</a></li>
+<li><a class="reference internal" href="#rendered-documentation-on-ddsc-github-com">Rendered documentation on ddsc.github.com</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#credits">Credits</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="code_organization.html"
-                        title="previous chapter">Code organization and repository structure</a></p>
+  <p class="topless"><a href="documentation.html"
+                        title="previous chapter">Documentation pointers</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/project.txt"
@@ -100,14 +138,14 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="code_organization.html" title="Code organization and repository structure"
+          <a href="documentation.html" title="Documentation pointers"
              >previous</a> |</li>
         <li><a href="index.html">ddsc_project v documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2012, .
-      Last updated on 2012-10-05.
+      Last updated on 2012-10-26.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
   </body>
