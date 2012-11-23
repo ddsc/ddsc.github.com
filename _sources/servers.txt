@@ -36,7 +36,6 @@ The ubuntu server also has a Postgres/postgis database locally. Later on, this
 has to be moved to a separate machine.
 
 
-
 RabbitMQ
 --------
 
