@@ -13,24 +13,28 @@ Using a chef cookbook, four cassandra servers are set up, named
 Django API and lizard site
 --------------------------
 
-An ubuntu 12.04 LTS server for the `django API site
-<https://github.com/ddsc/ddsc-api>`_ and for the `lizard site
-<https://github.com/ddsc/ddsc-site>`_ has been set up.
+An ubuntu 12.04 LTS server for the various test sites has been set up at
+``s-ddsc-ws-d1.external-nens.local`` on a virtual machine in Nelen&Schuurmans'
+Amsterdam data center. (See `nens-internal-only server overview page
+<http://buildbot.lizardsystem.nl/serverinfo/servers/s-ddsc-ws-d1.html>`_)
 
-The API site has already been set up in a very very initial version at
-http://test.api.dijkdata.nl/ on the ``s-ddsc-ws-d1.external-nens.local``
-virtual machine in Nelen&Schuurmans' Amsterdam data center. **Note**: the
-domain name hasn't been coupled to the server yet, only the domain as such has
-been registered.
+Three sites are hosted there at the moment:
 
-The API site will have both a read and write API. Also included will be a
-socket implementation for recieving sensor data, just like at the IJkdijk
-experiment. Later on, this can be split over multiple servers if needed.
+- The `django API site <https://github.com/ddsc/ddsc-api>`_ has already been
+  set up in a very very initial version at http://test.api.dijkdata.nl/ . The
+  API site will have both a read and write API. Also included will be a socket
+  implementation for recieving sensor data, just like at the IJkdijk
+  experiment. Later on, this can be split over multiple servers if needed.
 
-The server also has a Postgres/postgis database (later on, this has to be
-moved to a separate machine).
+- The `management site <https://github.com/ddsc/ddsc-management>`_ is at
+http://test.beheer.dijkdata.nl/ .
 
-The Lizard site hasn't been set up yet.
+- The `front-end Lizard site <https://github.com/ddsc/ddsc-site>`_ is at
+  http://test.dijkdata.nl/ .
+
+The ubuntu server also has a Postgres/postgis database locally. Later on, this
+has to be moved to a separate machine.
+
 
 
 RabbitMQ

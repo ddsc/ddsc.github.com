@@ -58,18 +58,25 @@
 </div>
 <div class="section" id="django-api-and-lizard-site">
 <h2>Django API and lizard site<a class="headerlink" href="#django-api-and-lizard-site" title="Permalink to this headline">¶</a></h2>
-<p>An ubuntu 12.04 LTS server for the <a class="reference external" href="https://github.com/ddsc/ddsc-api">django API site</a> and for the <a class="reference external" href="https://github.com/ddsc/ddsc-site">lizard site</a> has been set up.</p>
-<p>The API site has already been set up in a very very initial version at
-<a class="reference external" href="http://test.api.dijkdata.nl/">http://test.api.dijkdata.nl/</a> on the <tt class="docutils literal"><span class="pre">s-ddsc-ws-d1.external-nens.local</span></tt>
-virtual machine in Nelen&amp;Schuurmans&#8217; Amsterdam data center. <strong>Note</strong>: the
-domain name hasn&#8217;t been coupled to the server yet, only the domain as such has
-been registered.</p>
-<p>The API site will have both a read and write API. Also included will be a
-socket implementation for recieving sensor data, just like at the IJkdijk
-experiment. Later on, this can be split over multiple servers if needed.</p>
-<p>The server also has a Postgres/postgis database (later on, this has to be
-moved to a separate machine).</p>
-<p>The Lizard site hasn&#8217;t been set up yet.</p>
+<p>An ubuntu 12.04 LTS server for the various test sites has been set up at
+<tt class="docutils literal"><span class="pre">s-ddsc-ws-d1.external-nens.local</span></tt> on a virtual machine in Nelen&amp;Schuurmans&#8217;
+Amsterdam data center. (See <a class="reference external" href="http://buildbot.lizardsystem.nl/serverinfo/servers/s-ddsc-ws-d1.html">nens-internal-only server overview page</a>)</p>
+<p>Three sites are hosted there at the moment:</p>
+<ul class="simple">
+<li>The <a class="reference external" href="https://github.com/ddsc/ddsc-api">django API site</a> has already been
+set up in a very very initial version at <a class="reference external" href="http://test.api.dijkdata.nl/">http://test.api.dijkdata.nl/</a> . The
+API site will have both a read and write API. Also included will be a socket
+implementation for recieving sensor data, just like at the IJkdijk
+experiment. Later on, this can be split over multiple servers if needed.</li>
+<li>The <a class="reference external" href="https://github.com/ddsc/ddsc-management">management site</a> is at</li>
+</ul>
+<p><a class="reference external" href="http://test.beheer.dijkdata.nl/">http://test.beheer.dijkdata.nl/</a> .</p>
+<ul class="simple">
+<li>The <a class="reference external" href="https://github.com/ddsc/ddsc-site">front-end Lizard site</a> is at
+<a class="reference external" href="http://test.dijkdata.nl/">http://test.dijkdata.nl/</a> .</li>
+</ul>
+<p>The ubuntu server also has a Postgres/postgis database locally. Later on, this
+has to be moved to a separate machine.</p>
 </div>
 <div class="section" id="rabbitmq">
 <h2>RabbitMQ<a class="headerlink" href="#rabbitmq" title="Permalink to this headline">¶</a></h2>
@@ -140,7 +147,7 @@ the password) in the API site&#8217;s <a class="reference external" href="https:
     </div>
     <div class="footer">
         &copy; Copyright 2012, .
-      Last updated on 2012-10-26.
+      Last updated on 2012-11-23.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
   </body>
