@@ -43,3 +43,13 @@ For the time being, we use an existing Nelen&Schuurmans RabbitMQ server:
 ``p-flod-rmq-d1.external-nens.local``. You can see the connection data (except
 the password) in the API site's `staging settings
 <https://github.com/ddsc/ddsc-api/blob/master/ddsc_api/stagingsettings.py>`_.
+
+
+Rest API
+---------
+
+The `DDSC webclient <https://github.com/ddsc/webclient>`_ is at http://ddsc.github.com/webclient .
+
+The communication of the webclient and the server follow this diagram:
+
+.. image:: json-api-client-server.png
