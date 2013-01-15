@@ -35,6 +35,11 @@ Three sites are hosted there at the moment:
 The ubuntu server also has a Postgres/postgis database locally. Later on, this
 has to be moved to a separate machine.
 
+The current structure is as follows:
+
+.. image:: dijkdata-server-structure.png
+
+
 
 RabbitMQ
 --------
