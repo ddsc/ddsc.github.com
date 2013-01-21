@@ -5,25 +5,25 @@ Server setup
 Cassandra cluster
 -----------------
 
-Using a chef cookbook, four cassandra servers are set up, named
-``d-ddsc-dfs-d1.external-nens.local`` till
-``d-ddsc-dfs-d4.external-nens.local``. They run ubuntu 12.04 LTS.
+Using a chef cookbook, four Cassandra servers are set up, named
+``p-ddsc-cass-d1.ddsc.local`` till
+``p-ddsc-cass-d4.ddsc.local``. They run Ubuntu 12.04 LTS.
 
 
 Django API and lizard site
 --------------------------
 
-An ubuntu 12.04 LTS server for the various test sites has been set up at
-``s-ddsc-ws-d1.external-nens.local`` on a virtual machine in Nelen&Schuurmans'
+An Ubuntu 12.04 LTS server for the various test sites has been set up at
+``s-ddsc-ws-d1.external-nens.local`` on a virtual machine in Nelen & Schuurmans'
 Amsterdam data center. (See `nens-internal-only server overview page
 <http://buildbot.lizardsystem.nl/serverinfo/servers/s-ddsc-ws-d1.html>`_)
 
 Three sites are hosted there at the moment:
 
 - The `django API site <https://github.com/ddsc/ddsc-api>`_ has already been
-  set up in a very very initial version at http://test.api.dijkdata.nl/ . The
+  set up in a very, very initial version at http://test.api.dijkdata.nl/ . The
   API site will have both a read and write API. Also included will be a socket
-  implementation for recieving sensor data, just like at the IJkdijk
+  implementation for receiving sensor data, just like at the IJkdijk
   experiment. Later on, this can be split over multiple servers if needed.
 
 - The `management site <https://github.com/ddsc/ddsc-management>`_ is at
@@ -32,7 +32,7 @@ Three sites are hosted there at the moment:
 - The `front-end Lizard site <https://github.com/ddsc/ddsc-site>`_ is at
   http://test.dijkdata.nl/ .
 
-The ubuntu server also has a Postgres/postgis database locally. Later on, this
+The Ubuntu server also has a PostgreSQL/PostGIS database locally. Later on, this
 has to be moved to a separate machine.
 
 The current structure is as follows:
