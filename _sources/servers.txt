@@ -32,6 +32,12 @@ The current structure is as follows:
 .. image:: dijkdata-server-structure.png
 
 
+PostgreSQL
+----------
+
+PostgreSQL is running on ``p-ddsc-db-d1.ddsc.local``.
+
+
 Cassandra cluster
 -----------------
 
