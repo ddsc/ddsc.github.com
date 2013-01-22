@@ -49,12 +49,7 @@ Using a Chef cookbook, four Cassandra servers have been set up, named
 RabbitMQ
 --------
 
-For development and staging purposes, the following RabbitMQ server is used:
-``p-flod-rmq-d1.external-nens.local``. You can see the connection data (except
-the password) in the API site's `staging settings
-<https://github.com/ddsc/ddsc-api/blob/master/ddsc_api/stagingsettings.py>`_.
-
-A dedicated RabbitMQ production server is on ``p-ddsc-rmq-d1.ddsc.local``.
+A dedicated RabbitMQ server is on ``p-ddsc-rmq-d1.ddsc.local``.
 
 
 Rest API
